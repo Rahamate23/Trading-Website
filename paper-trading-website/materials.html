@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore professional printing materials including mousepads, lamination film, lamination gum and release paper.">
+
+    <title>Other Printing Materials | PRESS & PAPER</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            PRESS <span>&</span> PAPER
+            <small>PRINTING MATERIALS</small>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="papers.html">Press Papers</a>
+            <a href="materials.html">Other Materials</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <a href="#cart" class="nav-button">
+            MY ENQUIRY
+            <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="catalogue-header">
+
+        <span class="hero-tag">OUR PRODUCT CATALOGUE</span>
+
+        <h1>OTHER PRINTING MATERIALS</h1>
+
+        <p>
+            Supporting materials for commercial printing
+            and finishing applications.
+        </p>
+
+    </section>
+
+
+    <!-- MATERIALS CATALOGUE -->
+    <section class="catalogue-section">
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="product-search"
+                placeholder="Search printing materials..."
+                oninput="searchProducts()"
+                aria-label="Search printing materials"
+            >
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+        <div id="other-products-container"
+             class="products-container">
+
+            <!-- Products are inserted here by script.js -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ENQUIRY CART -->
+    <section class="cart-section" id="cart">
+
+        <h2>YOUR PRODUCT ENQUIRY</h2>
+
+        <p>
+            Review your selected materials before
+            submitting your enquiry.
+        </p>
+
+        <div id="cart-items">
+            <p>Your enquiry cart is currently empty.</p>
+        </div>
+
+        <button class="order-button"
+                onclick="orderOnWhatsApp()">
+            SUBMIT ENQUIRY
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>PRESS <span>&</span> PAPER</h2>
+
+        <p>Commercial Press Printing Papers & Materials</p>
+
+        <p>Ombahal-22, Kathmandu, Nepal</p>
+
+        <p>
+            © 2026 PRESS & PAPER. All Rights Reserved.
+        </p>
+
+        <p>
+            <a href="index.html">Back to Homepage</a>
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

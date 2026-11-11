@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Browse press printing papers, specialty papers, textured papers and gumming papers.">
+
+    <title>Press Printing Papers | PRESS & PAPER</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            PRESS <span>&</span> PAPER
+            <small>PRINTING MATERIALS</small>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="papers.html">Press Papers</a>
+            <a href="materials.html">Other Materials</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <a href="#cart" class="nav-button">
+            MY ENQUIRY
+            <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="catalogue-header">
+
+        <span class="hero-tag">OUR PRODUCT CATALOGUE</span>
+
+        <h1>PRESS PRINTING PAPERS</h1>
+
+        <p>
+            Explore our collection of specialty, textured,
+            antique and gumming papers.
+        </p>
+
+        <p>
+            Available sizes: 12 × 18 inches and 13 × 19 inches
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="catalogue-section">
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="product-search"
+                placeholder="Search paper name, GSM, finish or product code..."
+                oninput="searchProducts()"
+                aria-label="Search printing papers"
+            >
+
+        </div>
+
+
+        <!-- CATEGORY FILTERS -->
+        <div class="filter-container">
+
+            <button class="active"
+                    onclick="filterProducts('All')">
+                ALL PAPERS
+            </button>
+
+            <button onclick="filterProducts('Specialty Papers')">
+                SPECIALTY PAPERS
+            </button>
+
+            <button onclick="filterProducts('Textured Papers')">
+                TEXTURED PAPERS
+            </button>
+
+            <button onclick="filterProducts('Antique Papers')">
+                ANTIQUE PAPERS
+            </button>
+
+            <button onclick="filterProducts('Gumming Papers')">
+                GUMMING PAPERS
+            </button>
+
+            <button onclick="filterProducts('Code Papers')">
+                CODE PAPERS
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT CATALOGUE -->
+        <div id="products-container"
+             class="products-container">
+
+            <!-- Products are inserted here by script.js -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ENQUIRY CART -->
+    <section class="cart-section" id="cart">
+
+        <h2>YOUR PRODUCT ENQUIRY</h2>
+
+        <p>
+            Review the products you have selected before
+            submitting your enquiry.
+        </p>
+
+        <div id="cart-items">
+            <p>Your enquiry cart is currently empty.</p>
+        </div>
+
+        <button class="order-button"
+                onclick="orderOnWhatsApp()">
+            SUBMIT ENQUIRY
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>PRESS <span>&</span> PAPER</h2>
+
+        <p>Commercial Press Printing Papers & Materials</p>
+
+        <p>Ombahal-22, Kathmandu, Nepal</p>
+
+        <p>
+            © 2026 PRESS & PAPER. All Rights Reserved.
+        </p>
+
+        <p>
+            <a href="index.html">Back to Homepage</a>
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
